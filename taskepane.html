@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Better AutoReply</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }       
+        .content {
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            color: #888;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Better AutoReply</h1>
+        </div>
+        <div class="content">
+            <p>This is the content of the task pane.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 Better AutoReply. All rights reserved.</p>
+        </div>
+    </div>
+    <form id="outOfOfficeForm">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate"><br><br>
+        
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <button type="button" onclick="setOutOfOffice()">Set Out of Office</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/app/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
+    <Id>12345678-1234-1234-1234-123456789012</Id>
+    <Version>1.0.0.0</Version>
+    <Provider>GrittyPixels</Provider>
+    <DefaultLocale>dk-DK</DefaultLocale>
+    <DisplayName DefaultValue="Better AutoReply"/>
+    <Description DefaultValue="Improves built-in AutoReply in Outlook"/>
+    <IconUrl DefaultValue="icon.png"/>
+    <SupportUrl DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
+    <AppDomains>
+        <AppDomain>https://github.com</AppDomain>
+    </AppDomains>
+    <Hosts>
+        <Host Name="WorkMail"/>
+    </Hosts>
+    <DefaultSettings>
+        <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
+    </DefaultSettings>
+</OfficeApp>
+    <DefaultSettings>
+        <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
+    </DefaultSettings>
+</OfficeApp>
+s
