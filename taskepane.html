@@ -45,7 +45,13 @@
         </div>
     </div>
     <form id="outOfOfficeForm">
-        <label for="startDate">Start Date:</label>
+        <label for="scheduleType">Schedule Type:</label>
+        <select id="scheduleType" name="scheduleType">
+            <option value="oneTime">One Time</option>
+            <option value="weekly">Weekly</option>
+            <option value="biWeekly">Bi-Weekly</option>
+        </select><br><br>
+        
         <input type="date" id="startDate" name="startDate"><br><br>
         
         <label for="endDate">End Date:</label>
