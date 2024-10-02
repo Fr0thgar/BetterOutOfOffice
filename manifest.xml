@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<OfficeApp xmlns="http://schemas.microsoft.com/office/app/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="TaskPaneApp">
-    <Id>12345678-1234-1234-1234-123456789012</Id>
-    <Version>1.0.0.0</Version>
+<OfficeApp 
+    xmlns="http://schemas.microsoft.com/office/app/1.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bt="http://schema.microsoft.com/office/officeappbasictypes/1.0"
+    xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" 
+    xsi:type="Mailapp">
+
+    <Id>7fabebbe-f24c-4386-b643-de6bf7db6453</Id>
+    <Version>0.0.1</Version>
     <Provider>GrittyPixels</Provider>
     <DefaultLocale>dk-DK</DefaultLocale>
-    <DisplayName DefaultValue="Better AutoReply"/>
-    <Description DefaultValue="Improves built-in AutoReply in Outlook"/>
-    <IconUrl DefaultValue="icon.png"/>
+    <DisplayName DefaultValue="Better Out of Office"/>
+    <Description DefaultValue="Improves built-in Out of Office auto reply system in Outlook"/>
+    <IconUrl DefaultValue="https://www.contoso.com/assets/icon-32.png"/>
     <SupportUrl DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
     <AppDomains>
         <AppDomain>https://github.com</AppDomain>
     </AppDomains>
     <Hosts>
-        <Host Name="WorkMail"/>
+        <Host Name="Mailbox"/>
     </Hosts>
+
     <DefaultSettings>
         <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
     </DefaultSettings>
