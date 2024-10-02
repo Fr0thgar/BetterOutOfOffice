@@ -21,6 +21,74 @@
         <Host Name="Mailbox"/>
     </Hosts>
 
+    <Requirements>
+        <Sets>
+            <Set Name="Mailbox" minVersion="1.1"/>
+        </Sets>
+    </Requirements>
+
+    <FormSettings>
+        <Form xsi:type="ItemRead">
+            <DesktopSettings>
+                <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
+                <RequestedHeight DefaultValue="250"/>
+            </DesktopSettings>
+        </Form>
+    </FormSettings>
+
+    <Permissions>ReadWriteMailbox</Permissions>
+        <Rule xsi:type="RuleCollection" Mode="Or">
+            <Rule xsi:type="ItemIs" ItemType="Message" Form="Read"/>
+        </Rule>
+    <DisableEntityHighlighting>false</DisableEntityHighlighting>
+
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+        <Requirements>
+            <bt:Sets DefaultMinVersion="1.1">
+                <bt:Set Name="Mailbox"/>
+            </bt:Sets>
+        </Requirements>
+        <Hosts>
+            <Host xsi:type="MailHost">
+                <DesktopFormFactor>
+                    <FunctionFile resid="taskpane.js"/>
+                    <ExtensionPoint xsi:type="MessageReadCommandSurface">
+                        <OfficeTab id="TabDefault">
+                            <Group id="msgReadGroup">
+                                <Label resid="groupLabel1"/>
+                                <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                                    <Label resid="paneReadButtonLabel"/>
+                                    <Supertip>
+                                        <Title resid="paneReadSuperTupTitle"/>
+                                        <Description resid="paneReadSuperTipDesc"/>
+                                    </Supertip>
+                                    <Icon>
+                                        <bt:Image size="16" resid="icon-16"/>
+                                        <bt:Image size="32" resid="icon-32"/>
+                                        <bt:Image size="80" resid="icon-80"/>
+                                    </Icon>
+                                    <Action xsi:type="ShowTaskpane">
+                                        <SourceLocation resid="taskpane.html"/>
+                                    </Action>
+                                </Control>
+                            </Group>
+                        </OfficeTab>
+                    </ExtensionPoint>
+                </DesktopFormFactor>
+            </Host>
+        </Hosts>
+        <Resources>
+            <bt:images>
+                <bt:Image id="icon-16" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/16"/>
+                <bt:Image id="icon-32" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/32"/>
+                <bt:Image id="icon-80" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/80"/>
+            </bt:Images>
+            <bt:Urls>
+                <bt:Url id="taskpane.html" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/taskpane.html"/>
+                <bt:Url id="taskpane.js" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/taskpane.js"/>
+        </Resources>
+    </VersionOverrides>
+
     <DefaultSettings>
         <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
     </DefaultSettings>

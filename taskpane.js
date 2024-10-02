@@ -120,4 +120,3 @@ function handleAsyncResult(asyncResult) {
     }
 }
 
-// ... rest of the existing code ...
