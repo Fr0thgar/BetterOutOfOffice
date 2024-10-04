@@ -79,22 +79,23 @@
         </Hosts>
         <Resources>
             <bt:images>
-                <bt:Image id="icon-16" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/16"/>
-                <bt:Image id="icon-32" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/32"/>
-                <bt:Image id="icon-80" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/80"/>
+                <bt:Image id="icon-16" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
+                <bt:Image id="icon-32" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
+                <bt:Image id="icon-80" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
             </bt:Images>
             <bt:Urls>
                 <bt:Url id="taskpane.html" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/taskpane.html"/>
                 <bt:Url id="taskpane.js" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/taskpane.js"/>
+            </bt:Urls>
+            <bt:ShortStrings>
+                <bt:String id="groupeLabel" DefaultValue="Out of Office"/>
+                <bt:String id="paneReadButtonLabel" DefaultValue="Set Out of Office"/>
+                <bt:String id="paneReadSuperTipTitle" DefaultValue="Out of Office Customizer"/>
+            </bt:ShortStrings>
+            <bt:LongStrings>
+                <bt:String id="paneReadSuperTipDesc" DefaultValue="Customize your Out of Office auto reply message"/>
+            </bt:LongStrings>
         </Resources>
     </VersionOverrides>
-
-    <DefaultSettings>
-        <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
-    </DefaultSettings>
-</OfficeApp>
-    <DefaultSettings>
-        <SourceLocation DefaultValue="https://github.com/Fr0thgar/better-auto-reply"/>
-    </DefaultSettings>
 </OfficeApp>
 
