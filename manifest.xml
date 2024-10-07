@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.3" encoding="UTF-8"?>
 <OfficeApp 
-    xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+    xmlns="http://schemas.microsoft.com/office/appforoffice/1.3"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
     xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
     xsi:type="MailApp">
 
     <Id>7fabebbe-f24c-4386-b643-de6bf7db6453</Id>
-    <Version>0.0.1</Version>
-    <Provider>GrittyPixels</Provider>
+    <Version>1.0.0.0</Version>
+    <ProviderName>GrittyPixels</ProviderName>
     <DefaultLocale>en-US</DefaultLocale>
     <DisplayName DefaultValue="Better Out of Office"/>
     <Description DefaultValue="Improves built-in Out of Office auto reply system in Outlook"/>
@@ -26,7 +26,7 @@
 
     <Requirements>
         <Sets>
-            <Set Name="Mailbox" minVersion="1.1"/>
+            <Set Name="Mailbox" minVersion="1.3"/>
         </Sets>
     </Requirements>
 
@@ -81,7 +81,7 @@
             </Host>
         </Hosts>
         <Resources>
-            <bt:images>
+            <bt:Images>
                 <bt:Image id="icon-16" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
                 <bt:Image id="icon-32" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
                 <bt:Image id="icon-80" DefaultValue="https://github.com/Fr0thgar/better-auto-reply/assets/grittypixels-high-resolution-logo-transparent.png"/>
@@ -96,7 +96,7 @@
                 <bt:String id="paneReadSuperTipTitle" DefaultValue="Out of Office Customizer"/>
             </bt:ShortStrings>
             <bt:LongStrings>
-                <bt:String id="paneReadSuperTipDesc" DefaultValue="Customize your Out of Office auto reply message"/>
+                <bt:String id="paneReadSuperTipDesc" DefaultValue="Opens a pane to customize your out of office settings."/>
             </bt:LongStrings>
         </Resources>
     </VersionOverrides>
